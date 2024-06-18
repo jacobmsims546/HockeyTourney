@@ -1,7 +1,7 @@
 # HockeyTourney
 # This program is designed to emulate a scoreboard and seven segment display for a hockey tournament in ARM assembly.
 
-<h1>View my flowchart for this program at: https://drive.google.com/file/d/1jkeZEBap6PB27HxGQ2tysDYolQMW2xxF/view?usp=sharing</h1>
+<p>View my flowchart for this program at: https://drive.google.com/file/d/1jkeZEBap6PB27HxGQ2tysDYolQMW2xxF/view?usp=sharing</p>
 
 <p>• There are (in the DATA section) two null-terminated integer arrays called
 homescores and awayscores. These are used to hold packed values 
@@ -25,12 +25,10 @@ represent a single digit, and the most significant bit will always be 0. To
 represent a 0, for example, all of the segments except for the middle one will be
 on. The table below shows each digit and what will be stored for display on a 7-
 segment display.</p>
-<p>
-Digit represented: 0 1 2 3 4 5 6 7 8 9
-</p>
-<p>
-Byte stored (7seg): 0x3F 0x03 0x5B 0x4F 0x66 0x6D 0x7D 0x07 0x7F 0x77
-</p>
+| Digit represented: | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Byte stored (7seg): | 0x3F | 0x03 | 0x5B | 0x4F | 0x66 | 0x6D | 0x7D | 0x07 | 0x7F | 0x77 |
+
 <p>• For example, if the home score is 5 and the away score is 2, the scoreboard array
 will hold 0x6D, 0x5B.</p>
 
